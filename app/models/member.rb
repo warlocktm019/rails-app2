@@ -2,6 +2,6 @@
 
 class Member < ApplicationRecord
   belongs_to :company
-  has_many :attendance_record, dependent: :destroy
-  has_many :attendance_schedule, dependent: :destroy
+  has_many :attendance_records, dependent: :destroy
+  has_many :attendance_schedules, dependent: :destroy
 end
